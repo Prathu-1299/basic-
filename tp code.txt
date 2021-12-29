@@ -1,0 +1,33 @@
+int num =19;
+boolean mana = true;
+ for(int i = 2;i < num;i++){
+if(num % i == 0){
+mana = false;
+}
+}
+if(mana){
+int rev = o;
+int rem;
+// check reverse number are prime or not prime
+while(num != 0){
+ rem= num%10;
+ rev= rem*rev%10;
+ num= num / 10;
+}
+// check reverse is p or notp
+     for( int p =2;p < rev;p++){
+     if(rev % p==0){
+        mana = false;
+}
+}
+if(mana){
+System.out.println("tp");
+}
+else{
+System.out.println("n tp");
+}
+}
+else{
+System.out.println("not p");
+}
+}
